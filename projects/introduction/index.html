@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <title>introduction</title>
+        <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+ font-family: "Courier New";
+ padding: 50px;
+      }
+      body {
+ background: lightpink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><i>when i get my hi-C fruit punch from the coca-cola freestyle machine i must cut it with 25% water in order to drink it...</i></h1>
+    <p>welcome 2 my page--i am julia. born at a very young age, ive been causing a ruckus ever since. when i am not writing introduction pages about myself, you can likely find me rollerskating or enjoying a bowl of pasta</p>
+    <br>
+    <br>
+    <div class="row">
+      <div class="column">
+        <h1>shopping list:</h1>
+          <ul>
+            <li>so delicious brand vanilla ice cream sandwiches</li>
+            <li>hot cheeto</li>
+            <li>crayola broad line 10 ct markers (classic)</li>
+            <li>shrinky dinks (creative pack--10 sheets)</li>
+          </ul>
+          <br>
+          <p> find me on <a href=http://instagram.com/moonbirdmonster>instagram</a> or <a href=https://open.spotify.com/user/juliaspewak?si=41f0696a1a0242a4>spotify</a> :-)</p>
+          <br>
+          <h1>days until i return 2 richmond:</h1>
+
+
+        <p id="demo"></p>
+          <script>
+
+        var countDownDate = new Date("July 1, 2021 00:00:00").getTime();
+
+      var x = setInterval(function() {
+
+
+          var now = new Date().getTime();
+
+
+          var distance = countDownDate - now;
+
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "im here!";
+          }
+        }, 1000);
+        </script>
+</div>
+      <div class="column"><img src="toast.png" align="right" alt="me eating toast" style="max-height:550px;"></div>
+    </div>
+
+</body>
+</html>
